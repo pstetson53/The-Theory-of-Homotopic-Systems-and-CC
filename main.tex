@@ -1,0 +1,72 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{tikz-cd}
+\usetikzlibrary{decorations.pathmorphing}
+\title{The Theory of Homotopic Systems and Certified Compilers}
+\author{R. Philip Stetson IV}
+\date{November 2020}
+
+\begin{document}
+
+\maketitle
+
+\section{Abstract}
+We construct a nice syntax and prove the fundamental theorems of a theory of homotopic systems. Thus, we develop homotopy theory of local systems defined w.r.t. an equivalence/automorphism group (cohomology theory) or homotopy type, we also contribute a new method for calculating all the homotopy groups of spheres. Formally closed schemes and We use elements of this theory to construct proofs of three conjectures in Gaitsgory [1] (14.2.4, 15.3.5, 16.6.11), thus contributing essential material to both the arithmetic Langlands program and the geometric Langlands program and quantum geometry / string theory. There exists a discussion of other applications of this theory: we present a closed and universal programming language for pure mathematicians (which can be bootstrapped and certified) and researchers in model-theoretic experimental $\approx$ mathematical physics and the coding of certified compilers (a completion of mathematical computer science, see [1,2]). In terms of ethics in the practice of science, the author claims that only theorems are meaningful, up to some chosen isomorphism to a space of proofs. Likewise, in the practice of every science and not merely pure mathematics, everything should be computed/checked through a certified compiler. Communicating in terms of certified compilers will stop redundancy in publications and thinking, and will automate/speed up the discovery of theorems and end the possibility of gross negligence.  Once we introduce the mathematics in sections 2, 3, and 4, we present a programming language in 5 that tells us exactly how to make the following diagram commute (respectively topleft, topright, bottomleft, bottomright): adeles, chain complexes, ideles, automorphic forms.
+\newline \newline
+there are twelve arrows to consider. We also need to consider when each arrow is a epi/mono w.r.t. a pullback or pushforward diagram. 
+\newline
+\begin{center}
+\begin{tikzcd}
+
+\Pi \arrow[r, leftrightsquigarrow] & \Omega \arrow[d, leftrightsquigarrow] \\
+\Sigma \arrow[r, leftrightsquigarrow] \arrow[u, leftrightsquigarrow] & \Gamma
+\end{tikzcd}
+\end{center}
+Be sure to mention homotopy groups of spheres and framed cobordisms. My setup can recover grothendieck's six functor formalism, and why this happens is because of the duality and the pattern I found. 
+
+\newline \newline
+\textbf{How does it work together?}The pattern I found proves all of the langlands program theorems and provides a framework for thinking about mathematics in terms of representations, deformations, the homotopy of functions and formal completions of languages and geometries. admittedly this structure recovers the full space of grothendieck's six functor formalism. \textbf{NOTE we can recover the classical notion of homotkopoy groups for spheres and break apart into arithmetic fractures and locally flat cohomology theories}. Note for philip: There's the 48 functor (idk really, more like quantum 6 choice) formalism and then we can truncate everything into natural questions and queries, each kind answers in its own way via galois theory.
+
+
+Kinds of closed ind coherent sheaves equipped with ultrafilters and what not have the ability to give coherence for higher cardinals, geometries and structures and combinatorial representations and parametrizations.
+\tableofcontents
+
+\section{On the Theory of Homotopic Measures}
+\subsection{Introduction}
+\subsection{Geometric realizations via a homotopy of closed subschemes}
+\subsection{Maps of formal sums}
+Theorem
+\subsection{Formal sections}
+
+\section{On the Theory of Homotopic Root Lattices}
+\subsection{Introduction}
+\subsection{Nerves via teichmuller space of open subschemes}
+\subsection{Formal sections}
+\subsection{Maps of formal sums}
+
+\section{On the Theory of Homotopic Systems}
+\subsection{$\alpha$-type operations}
+\subsection{$\beta$-type operations}
+\subsection{$\eta$-type operations}
+
+\section{A Programming Language for you}
+\subsection{Building it}
+\subsection{Certifying a build}
+\subsection{Coding a query}
+
+\section{Computing Higher Homotopy groups of spheres}
+
+
+\section{Some results in the Categorical Geometric Langlands Program}
+
+\section{Appendix}
+
+
+
+\section{Conclusion}
+
+
+
+\end{document}
